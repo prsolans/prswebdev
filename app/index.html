@@ -27,9 +27,9 @@
     -->
     <!-- Polyfill Web Components support for older browsers -->
     <link rel="import" href="bower_components/core-scaffold/core-scaffold.html">
-      <link rel="import" href="bower_components/core-menu/core-menu.html">
-  <link rel="import" href="bower_components/core-item/core-item.html">
-  <link rel="import" href="bower_components/core-animated-pages/core-animated-pages.html">
+    <link rel="import" href="bower_components/core-menu/core-menu.html">
+    <link rel="import" href="bower_components/core-item/core-item.html">
+    <link rel="import" href="bower_components/core-animated-pages/core-animated-pages.html">
     <script src="bower_components/platform/platform.js"></script>
 
     <!-- build:css styles/components/main.min.css -->
@@ -38,85 +38,89 @@
 </head>
 
 <body>
-<core-scaffold>
-      <core-header-panel navigation flex mode="seamed">
-      <core-toolbar style="background-color: #526E9C; color: #fff; font-size: 3rem; text-align: center;"><core-item icon="work" label=""></core-item></core-toolbar>
-      <core-menu theme="core-dark-theme">
-        <core-item icon="settings" label="About"></core-item>
-        <core-item icon="apps" label="Demos">  <a href="/demos" target="_self"></a>
-</core-item>
-      </core-menu>
-    </core-header-panel>
-    
-    <div tool>prswebdev.com</div>
-    
-    <div>
-<section>
-<h1>Experience</h1>
-<h2>Formal Education</h2>
-Northwestern University, Computer Science
-<h2>Professional</h2>
-<ul>
-	<li>Agency experience</li>
-	<li>AQDCT
-</li>
-	<li>Showfile</li>
-	<li>A.T. Kearney
-</li>
-</ul>
-<h2>
-Leadership</h2>
-<ul>
-	<li>Project Management</li>
-<li>Web strategy</li>
-<li>Web development</li>
-<li>Mobile application development</li>
-<li>Agile scrum</li>
-<li>Story writing</li>
-<li>Sprint tracking</li>
-<li>Task Estimation</li>
-<li>Client Management</li>
-<li>Networking</li>
-<li>Presentation and sales</li>
-<li>Project scoping and estimation</li>
-<li>Service and support</li></ul>
-<h2>Skills</h2>
-<ul>
-<li>Languages</li>
-<li>PHP, JS</li>
-<li>Frameworks</li>
-<li>Symfony, Laravel, Angular, Foundation, Bootstrap</li>
-<li>Databases</li>
-<li>Architecture and design</li>
-<li>MySQL, T-SQL</li>
-<li>Tools	</li>
-<li>Git, TFS</li>
-<li>Google Analytics</li>
-<li>Content Management</li>
-<li>Content strategy</li>
-<li>Workflow definition</li>
-<li>Wordpress (PHP), Kentico (.NET), Liferay (Java)</li></ul>
-<h2>About</h2>
-<ul><li>Social</li>
-<li>Campaign management</li>
-<li>Training and documentation</li></ul>
-<h2>Continued Education</h2>
+    <core-scaffold>
+        <core-header-panel navigation flex mode="seamed">
+            <core-toolbar style="background-color: #526E9C; color: #fff; font-size: 3rem; text-align: center;">
+                <core-item icon="work" label=""></core-item>
+            </core-toolbar>
+            <core-menu theme="core-dark-theme">
+                <core-item icon="settings" label="About"></core-item>
+                <core-item icon="apps" label="Demos">
+                    <a href="/demos" target="_self"></a>
+                </core-item>
+            </core-menu>
+        </core-header-panel>
 
-</section>
+        <div tool>prswebdev.com</div>
 
-    <core-animated-pages transitions="hero-transition cross-fade">
-  <section id="page1">
-    <div id="hero1" hero-id="hero" hero></div>
-    <div id="bottom1" cross-fade></div>
-  </section>
-  <section id="page2">
-    <div id="hero2" hero-id="hero" hero></div>
-    <div id="bottom2" cross-fade></div>
-  </section>
-</core-animated-pages>
+        <div>
+            <section>
+                <h1>Experience</h1>
+                <h2>Formal Education</h2>
+                Northwestern University, Computer Science
+                <h2>Professional</h2>
+                <ul>
+                    <li>Agency experience</li>
+                    <li>AQDCT
+                    </li>
+                    <li>Showfile</li>
+                    <li>A.T. Kearney
+                    </li>
+                </ul>
+                <h2>
+                    Leadership</h2>
+                <ul>
+                    <li>Project Management</li>
+                    <li>Web strategy</li>
+                    <li>Web development</li>
+                    <li>Mobile application development</li>
+                    <li>Agile scrum</li>
+                    <li>Story writing</li>
+                    <li>Sprint tracking</li>
+                    <li>Task Estimation</li>
+                    <li>Client Management</li>
+                    <li>Networking</li>
+                    <li>Presentation and sales</li>
+                    <li>Project scoping and estimation</li>
+                    <li>Service and support</li>
+                </ul>
+                <h2>Skills</h2>
+                <ul>
+                    <li>Languages</li>
+                    <ul><li>PHP, JS</li></ul>
+                    <li>Frameworks</li>
+                    <ul><li>Symfony, Laravel, Angular, Foundation, Bootstrap</li></ul>
+                    <li>Databases</li>
+                    <ul><li>Architecture and design</li>
+                    <li>MySQL, T-SQL</li></ul>
+                    <li>Tools</li>
+                    <ul><li>Git, TFS</li>
+                    <li>Google Analytics</li></ul>
+                    <ul><li>Content Management</li>
+                    <li>Content strategy</li>
+                    <li>Workflow definition</li>
+                    <li>Wordpress (PHP), Kentico (.NET), Liferay (Java)</li></ul>
+                    <li>Social campaign management</li>
+                    <li>Training</li>
+                    <ul><li>Onsite and virtual</li><li>Documentation</li></ul>
+                </ul>
+                <h2>Continued Education</h2>
 
-</div>
-</core-scaffold>
+            </section>
+
+            <core-animated-pages transitions="hero-transition cross-fade">
+                <section id="page1">
+                    <div id="hero1" hero-id="hero" hero></div>
+                    <div id="bottom1" cross-fade></div>
+                </section>
+                <section id="page2">
+                    <div id="hero2" hero-id="hero" hero></div>
+                    <div id="bottom2" cross-fade></div>
+                </section>
+            </core-animated-pages>
+
+        </div>
+    </core-scaffold>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
     (function(i, s, o, g, r, a, m) {

@@ -1,0 +1,34 @@
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../bower_components/paper-checkbox/paper-checkbox.html">
+<link rel="import" href="../bower_components/yt-video/yt-search-video.html">
+
+<polymer-element name="youtube-search">
+
+    <template>
+        <style>
+        #yt_search_video {
+            width: 760px;
+            height: 400px;
+        }
+        #core_input {
+            padding: 15px;
+            clear: both;
+        }
+        </style>
+        <div horizontal layout>
+            <paper-checkbox id="paper_checkbox" label="Lollapalooza"></paper-checkbox>
+        </div>
+        <paper-input floatinglabel placeholder="Enter an artist name..." inputvalue="" value="" id="core_input"></paper-input>
+        <yt-search-video imfeelinglucky="{{ $.core_input.value }}  {{ $.paper_checkbox.label }} live" id="yt_search_video"></yt-search-video>
+   Input: {{$.core_input.value}}<br/>
+   Checkbox: {{$.paper_checkbox.label}}
+
+    </template>
+
+    <script>
+    Polymer('youtube-search', {
+
+    });
+    </script>
+
+</polymer-element>

@@ -27,9 +27,9 @@
     -->
     <!-- Polyfill Web Components support for older browsers -->
     <link rel="import" href="../bower_components/core-scaffold/core-scaffold.html">
-      <link rel="import" href="../bower_components/core-menu/core-menu.html">
-  <link rel="import" href="../bower_components/core-item/core-item.html">
-  <link rel="import" href="../bower_components/core-animated-pages/core-animated-pages.html">
+    <link rel="import" href="../bower_components/core-menu/core-menu.html">
+    <link rel="import" href="../bower_components/core-item/core-item.html">
+    <link rel="import" href="../bower_components/core-animated-pages/core-animated-pages.html">
     <script src="../bower_components/platform/platform.js"></script>
 
     <!-- build:css styles/components/main.min.css -->
@@ -38,53 +38,65 @@
 </head>
 
 <body>
-<core-scaffold>
-      <core-header-panel navigation flex mode="seamed">
-      <core-toolbar style="background-color: #526E9C; color: #fff;">Application</core-toolbar>
-      <core-menu theme="core-dark-theme">
-        <core-item icon="settings" label="About"><a href="/index.html" target="_self"></a></core-item>
-        <core-item icon="apps" label="Demos">  <a href="/demos" target="_self"></a>
-</core-item>
-      </core-menu>
-    </core-header-panel>
-    
-    <div tool>Demos</div>
-    
-    <div><ul>
-    	<li><a href="responsive-carousel/">Responsive carousel using Foundation 5 Orbit</a></li>
-<li><a href="color-with-png-overlay">Color background with Texture overlay</a></li>
-    </ul>
+    <core-scaffold>
+        <core-header-panel navigation flex mode="seamed">
+            <core-toolbar style="background-color: #526E9C; color: #fff;">Application</core-toolbar>
+            <core-menu theme="core-dark-theme">
+                <core-item icon="settings" label="About">
+                    <a href="/index.html" target="_self"></a>
+                </core-item>
+                <core-item icon="apps" label="Demos">
+                    <a href="/demos" target="_self"></a>
+                </core-item>
+            </core-menu>
+        </core-header-panel>
 
-    <core-animated-pages transitions="hero-transition cross-fade">
-  <section id="page1">
-    <div id="hero1" hero-id="hero" hero></div>
-    <div id="bottom1" cross-fade></div>
-  </section>
-  <section id="page2">
-    <div id="hero2" hero-id="hero" hero></div>
-    <div id="bottom2" cross-fade></div>
-  </section>
-</core-animated-pages>
+        <div tool>Demos</div>
 
-</div>
-</core-scaffold>
+        <div>
+            <ul>
+                <li><a href="responsive-carousel/">Responsive carousel using Foundation 5 Orbit</a>
+                </li>
+                <li><a href="color-with-png-overlay">Color background with Texture overlay</a>
+                </li>
+            </ul>
+
+            <core-animated-pages transitions="hero-transition cross-fade">
+                <section id="page1">
+                    <div id="hero1" hero-id="hero" hero></div>
+                    <div id="bottom1" cross-fade></div>
+                </section>
+                <section id="page2">
+                    <div id="hero2" hero-id="hero" hero></div>
+                    <div id="bottom2" cross-fade></div>
+                </section>
+            </core-animated-pages>
+
+        </div>
+    </core-scaffold>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <!-- Google Tag Manager -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-K8NBHB" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
     <script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-1361882-18');
-    ga('require', 'displayfeatures');
-    ga('send', 'pageview');
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-K8NBHB');
     </script>
+    <!-- End Google Tag Manager -->
+
     <!-- Built with love using Web Starter Kit -->
 </body>
 

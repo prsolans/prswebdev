@@ -1,0 +1,8 @@
+<div ng-controller="MenuController as menu" data-role="panel" id="panel" data-theme="a" class="ui-panel ui-panel-position-left ui-panel-display-overlay
+ ui-body-a ui-panel-animate">
+ <section>
+    <div ng-repeat="item in menu.menuList">
+        <a href="#{{item.link}}">{{item.name}}</a>
+    </div>
+</section>
+</div>

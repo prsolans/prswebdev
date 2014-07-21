@@ -1,36 +1,60 @@
-<!DOCTYPE html>
-<html ng-app="prswebdevHome">
+<!doctype html>
+<html>
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.3/jquery.mobile.min.css">
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.3/jquery.mobile.min.js"></script>
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="196x196" href="images/touch/chrome-touch-icon-196x196.png">
 
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.0rc1/angular.min.js"></script>
-    <script src="/scripts/app.js"></script>
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="">
 
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
 
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+    <!-- Polyfill Web Components support for older browsers -->
+    <link rel="import" href="bower_components/core-scaffold/core-scaffold.html">
+    <link rel="import" href="bower_components/core-menu/core-menu.html">
+    <link rel="import" href="bower_components/core-item/core-item.html">
+    <link rel="import" href="bower_components/core-animated-pages/core-animated-pages.html">
+    <script src="bower_components/platform/platform.js"></script>
+
+    <!-- build:css styles/components/main.min.css -->
+    <link rel="stylesheet" href="styles/h5bp.css">
+    <!-- endbuild -->
 </head>
 
 <body>
-<div ng-controller="MenuController as menu" data-role="panel" id="panel" data-theme="a" class="ui-panel ui-panel-position-left ui-panel-display-overlay
- ui-body-a ui-panel-animate">
- <section>
-    <div ng-repeat="item in menu.menuList">
-        <a href="#{{item.link}}">{{item.name}}</a>
-    </div>
-</section>
-</div>
-		
-    <page-header></page-header>
+    <core-scaffold>
+        <core-header-panel navigation flex mode="seamed">
+            <core-toolbar style="background-color: #526E9C; color: #fff; font-size: 3rem; text-align: center;">
+                <core-item icon="work" label=""></core-item>
+            </core-toolbar>
+            <core-menu theme="core-dark-theme">
+                <core-item icon="settings" label="About"></core-item>
+                <core-item icon="apps" label="Demos">
+                    <a href="/demos" target="_self"></a>
+                </core-item>
+            </core-menu>
+        </core-header-panel>
 
-         <section>
+        <div tool>prswebdev.com</div>
+
+        <div>
+            <section>
                 <h1>Experience</h1>
                 <h2>Formal Education</h2>
                 Northwestern University, Computer Science
@@ -96,7 +120,21 @@
                 <h2>Continued Education</h2>
 
             </section>
-   <page-footer></page-footer>
+
+            <core-animated-pages transitions="hero-transition cross-fade">
+                <section id="page1">
+                    <div id="hero1" hero-id="hero" hero></div>
+                    <div id="bottom1" cross-fade></div>
+                </section>
+                <section id="page2">
+                    <div id="hero2" hero-id="hero" hero></div>
+                    <div id="bottom2" cross-fade></div>
+                </section>
+            </core-animated-pages>
+
+        </div>
+    </core-scaffold>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <!-- Google Tag Manager -->
     <noscript>
         <iframe src="//www.googletagmanager.com/ns.html?id=GTM-K8NBHB" height="0" width="0" style="display:none;visibility:hidden"></iframe>
@@ -118,7 +156,6 @@
     })(window, document, 'script', 'dataLayer', 'GTM-K8NBHB');
     </script>
     <!-- End Google Tag Manager -->
-
     <!-- Built with love using Web Starter Kit -->
 </body>
 

@@ -1,0 +1,27 @@
+body {
+    font-family: sans-serif;
+}
+
+.dark-blue {
+    background: #003B78;
+    color: white;
+}
+.dark-blue a {
+	color: white;
+}
+.light-blue {
+    background: #3BA7E2;
+}
+.yellow {
+    background: #D3C40A;
+}
+.dark-gray {
+    background: #515454
+}
+.white {
+    color: #ffffff;
+}
+
+#contactForm .ng-invalid.ng-dirty {
+  border: 2px solid red;
+}

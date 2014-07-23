@@ -1,13 +1,12 @@
 body {
     font-family: sans-serif;
 }
-
 .dark-blue {
     background: #003B78;
     color: white;
 }
 .dark-blue a {
-	color: white;
+    color: white;
 }
 .light-blue {
     background: #3BA7E2;
@@ -20,8 +19,4 @@ body {
 }
 .white {
     color: #ffffff;
-}
-
-#contactForm .ng-invalid.ng-dirty {
-  border: 2px solid red;
 }

@@ -1,1 +1,1 @@
-!function(){"use strict";var t=angular.module("app",[]);t.directive("headerLayout",function(){return{restrict:"E",templateUrl:"module/header.html"}}),t.controller("ContactFormCtrl",["$scope",function(t){t.contact={first:"first",last:"last",email:"email"}}]),$(document).ready(function(){})}();
+!function(){"use strict";var t=angular.module("app",[]);t.directive("headerLayout",function(){return{restrict:"E",templateUrl:"module/header.html"}}),t.controller("ContactFormCtrl",["$scope",function(t){t.contact={}}]),$(document).ready(function(){})}();

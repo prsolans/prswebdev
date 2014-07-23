@@ -12,9 +12,7 @@
     app.controller('ContactFormCtrl', ['$scope',
         function($scope) {
             $scope.contact = {
-                first: 'first',
-                last: 'last',
-                email: 'email'
+
             };
         }
     ]);

@@ -17,6 +17,21 @@
         }
     ]);
 
+    app.controller("ProjectsCtrl", function($scope, $http) {
+        $scope.url = 'http://dev.prswebdev.com/symfony2/web/app_dev.php/project/api';
+        $scope.projects = null;
+
+        $http.get(url)
+            .success(function(data) {
+                $scope.projects = data;
+                console.log('success');
+            })
+            .error(function(data, status, headers, config) {
+                //  Do some error handling here
+                console.log('error');
+            });
+    });
+
     $(document).ready(function() {});
 
 })();

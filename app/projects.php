@@ -17,6 +17,12 @@
 
         <!-- /header -->
         <h1>Projects</h1>
+        
+        <div ng-controller="ProjectsCtrl">
+            <!-- <ul ng-repeat="project in projects">
+              <li>{{project.name}}</li>
+            </ul> -->
+        </div>
 
         <footer id="footer" class="">
         </footer>

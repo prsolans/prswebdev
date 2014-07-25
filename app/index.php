@@ -13,9 +13,12 @@
 
 <body ng-app="app">
     <div class="container-fluid">
-        <header-layout></header-layout>
+        <?php include( 'module/header.php'); ?>
+
         <!-- /header -->
-        <h1>About</h1>
+
+        <h1>Home</h1>
+
         <footer id="footer" class="">
         </footer>
         <!-- /footer -->

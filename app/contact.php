@@ -17,11 +17,12 @@
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/app.js"></script>
     <div class="container-fluid">
-        <header-layout></header-layout>
+        <?php include( 'module/header.php'); ?>
+
         <!-- /header -->
         <h1>Contact</h1>
         <div ng-controller="ContactFormCtrl">
-            <form class="form" name="contactForm" id="contactForm">
+            <form class="form" novalidate name="contactForm" id="contactForm">
                 <fieldset>
                     <legend>Fill this thing out...</legend>
                     <div class="form-group">

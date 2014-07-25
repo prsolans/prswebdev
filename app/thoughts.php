@@ -13,7 +13,8 @@
 
 <body ng-app="app">
     <div class="container-fluid">
-        <header-layout></header-layout>
+        <?php include( 'module/header.php'); ?>
+
         <!-- /header -->
 
         <h1>Thoughts</h1>

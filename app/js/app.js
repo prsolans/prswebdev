@@ -18,7 +18,7 @@
     ]);
 
     app.controller("ProjectsCtrl", function($scope, $http) {
-        var url = 'http://prswebdev.com/admin/web/app.php/project/api.json';
+        var url = 'http://dev.prswebdev.com/prswebdev/app/admin/web/app_dev.php/project/api.json';
         $scope.projects = null;
         $http.get(url)
             .success(function(data) {
